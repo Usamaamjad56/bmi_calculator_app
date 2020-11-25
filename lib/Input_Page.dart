@@ -1,3 +1,5 @@
+//import 'dart:html';
+
 import 'package:bmi_calculator_app/ConstantFile.dart';
 import 'package:bmi_calculator_app/ContainerFile.dart';
 import 'package:bmi_calculator_app/IconTextFile.dart';
@@ -19,6 +21,7 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   Gender selectGender;
   int sliderHeight = 180;
+  int sliderWeight = 60;
 
   @override
   Widget build(BuildContext context) {
@@ -114,6 +117,23 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                   child: RepeatContainerCode(
                 colors: Color(0xFF1D1E33),
+                cardWidget: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'HEIGHT',
+                      style: kLableStyle,
+                    ),
+                    Text(
+                      sliderWeight.toString(),
+                      style: kNumberStyle,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [],
+                    ),
+                  ],
+                ),
               )),
               Expanded(
                   child: RepeatContainerCode(
