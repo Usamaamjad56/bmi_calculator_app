@@ -1,11 +1,10 @@
 import 'package:bmi_calculator_app/ConstantFile.dart';
 import 'package:flutter/material.dart';
 
-class RepeatTextAndIconWidget extends StatelessWidget {
-  RepeatTextAndIconWidget({@required this.iconData, this.label});
+class RepeatIconAndText extends StatelessWidget {
+  RepeatIconAndText({@required this.iconData, this.label});
   final IconData iconData;
   final String label;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,15 +12,15 @@ class RepeatTextAndIconWidget extends StatelessWidget {
       children: [
         Icon(
           iconData,
-          size: 85.0,
+          size: 80.0,
         ),
         SizedBox(
-          height: 30.0,
+          height: 15.0,
         ),
         Text(
           label,
-          style: kLableStyle,
-        )
+          style: kLabelStyle,
+        ),
       ],
     );
   }

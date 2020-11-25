@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-//import 'package:bmi_calculator/Input_Page.dart';
 
 class RepeatContainerCode extends StatelessWidget {
   RepeatContainerCode({@required this.colors, this.cardWidget, this.onPressed});
-  final Color colors;
   final Widget cardWidget;
+  final Color colors;
   final Function onPressed;
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class RepeatContainerCode extends StatelessWidget {
         margin: EdgeInsets.all(15.0),
         child: cardWidget,
         decoration: BoxDecoration(
-          color: colors,
+          color: colors, //Color(0xff1d1e33),
           borderRadius: BorderRadius.circular(10.0),
         ),
       ),
